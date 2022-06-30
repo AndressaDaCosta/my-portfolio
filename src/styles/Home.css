@@ -1,0 +1,95 @@
+.home-content {
+  padding: 1rem;
+  margin-top: 100px;
+}
+
+.home-content h1 {
+  font-size: 45px;
+  color: var(--white-100);
+}
+
+.home-content h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--purple-500);
+}
+
+.home-content p {
+  font-size: 20px;
+  color: var(--purple-500);
+}
+
+.span {
+  color: var(--purple-500);
+}
+
+.main-wrapper.home {
+  justify-content: center;
+}
+
+.image-perfil {
+  width: 500px;
+  margin-top: 50px;
+}
+
+.btn-download {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--purple-400);
+  color: var(--white-100);
+  transition: 0.3s;
+}
+
+.btn-download:hover {
+  background-color: var(--purple-500);
+  color: var(--gray-500);
+}
+
+@media screen and (max-width: 1375px) {
+  .main-wrapper.home {
+    flex-direction: column;
+  }
+
+  .home-content {
+    margin-top: 0;
+    margin-bottom: 5rem;
+  }
+
+  .home-content h1 {
+    font-size: 35px;
+  }
+
+  .home-content h2 {
+    font-size: 20px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .image-perfil {
+    width: 400px;
+    margin-top: 100px;
+    order: 1;
+    margin-bottom: 1rem;
+  }
+
+  .home-content {
+    order: 2;
+  }
+  .btn-download {
+    width: 100%;
+  }
+}
