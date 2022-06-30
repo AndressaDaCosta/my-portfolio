@@ -8,6 +8,7 @@ import '../styles/About.css'
 import IconCloud from '../components/IconCloud'
 import { VscRocket } from 'react-icons/vsc'
 import { BsChatDots } from 'react-icons/bs'
+import { AiOutlineThunderbolt } from 'react-icons/ai'
 
 function About() {
   return (
@@ -50,11 +51,12 @@ function About() {
                 <VscRocket className="icon-footer" />
               </p>
               <p className="text-about last">
-                <BsChatDots className="icon-footer" /> Ask me about ...{' '}
+                <AiOutlineThunderbolt className="icon-footer" /> Ask me about ...
                 <span className="span-highlight">
                   Html, CSS, JavaScript, React, Git/Github.
                 </span>
               </p>
+              <AiOutlineThunderbolt className="icon-footer" /> Fun fact: I love Astronomy 👩‍🚀 🪐 🌠 {' '}
               <span className="span-tag content">{'</p>'}</span>
               <br />
               <span className="span-tag body">{'</body>'}</span>
