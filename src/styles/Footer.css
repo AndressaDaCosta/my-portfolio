@@ -14,9 +14,9 @@
 
 .links-footer {
   display: flex;
+  justify-content: center;
   align-items: center;
   position: fixed;
-  left: 0;
 }
 
 .links-footer p {
@@ -53,8 +53,8 @@
   .footer-container {
     height: 80px;
   }
-  .text-footer {
-    display: none;
+  .links-footer p {
+    position: fixed;
   }
 
   .two,
@@ -68,7 +68,4 @@
   #bell {
     display: none;
   }
-}
-
-@media screen and (min-width: 1100px) {
 }
