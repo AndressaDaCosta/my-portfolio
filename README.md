@@ -1,7 +1,7 @@
 # My Porfolio
 
 <p align="center">
- <img width="900" src="https://github.com/AndressaDaCosta/myPortfolio/blob/master/project-preview.png?raw=true" alt="exemplo imagem" >
+ <img width="900" src="https://github.com/AndressaDaCosta/my-portfolio/blob/main/project-preview.png?raw=true" >
 </p>
 
 ## 💻 Projeto
