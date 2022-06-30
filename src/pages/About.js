@@ -39,8 +39,10 @@ function About() {
               <p className="text-about">
                 My focus is to be able to help improve people's lives,
                 developing applications that are{' '}
-                <span className="span-highlight">acessíveis e funcionais</span>.
-                My experience includes troubleshooting and testing, working in
+                <span className="span-highlight">
+                  accessible and functional.
+                </span>
+                . My experience includes troubleshooting and testing, working in
                 teams with strict deadlines, for projects developed in the
                 course of{' '}
                 <span className="span-highlight">Alura + Oracle: ONE</span> And

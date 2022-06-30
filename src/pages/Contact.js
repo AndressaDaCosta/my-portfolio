@@ -17,8 +17,11 @@ function Contact() {
           <MenuMobile />
           <main className="main-wrapper contact">
             <div className="title-container">
-              <h1 className="title-contact">Let's Talk 🤙</h1>
-              {/* <h2 className="message-contact">"Sozinhos podemos fazer tão pouco, juntos podemos fazer muito." – Helen Keller</h2> */}
+              <h1 className="title-contact">Let's Talk 🤙🏼 </h1>
+              <h2 className="message-contact">
+                " Sozinhos vencemos às vezes, mas em equipe podemos ganhar
+                constantemente! " – Autor desconhecido ·
+              </h2>
             </div>
             <div className="list-contact">
               <p className="class-name line">

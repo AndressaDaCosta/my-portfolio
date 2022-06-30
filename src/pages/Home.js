@@ -21,7 +21,7 @@ function Home() {
           <main className="main-wrapper home">
             <div className="home-content">
               <p>
-                <span className="span">{'<'}</span>Hello 👋 I am
+                <span className="span">{'<'}</span>Hello 👋🏼 I am
               </p>
               <h1>
                 Andressa Da Costa <span className="span">{'/>'}</span>{' '}
