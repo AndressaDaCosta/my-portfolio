@@ -1,12 +1,5 @@
 import React from 'react'
-import {
-  BsLinkedin,
-  BsGithub,
-  BsXCircle,
-  BsBraces,
-  BsCheck2All,
-  BsBell
-} from 'react-icons/bs'
+import { BsXCircle, BsBraces, BsCheck2All, BsBell } from 'react-icons/bs'
 import { BiGitBranch } from 'react-icons/bi'
 import { DiReact } from 'react-icons/di'
 import { FiAlertTriangle } from 'react-icons/fi'
