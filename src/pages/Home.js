@@ -39,7 +39,7 @@ function Home() {
                 wrapper="h2"
               />
               <a
-                href="https://gitconnected.com/andressadacosta/resume"
+                href="https://drive.google.com/file/d/1YOHIyGmzlYjPwPFzbAN-5H7ZwoY44pMp/view?usp=sharing"
                 target="_blank"
                 className="btn-download"
                 rel="noreferrer"
