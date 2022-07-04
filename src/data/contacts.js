@@ -19,7 +19,11 @@ const contacts = [
     href: 'https://www.instagram.com/andressacostaaaaaa/',
     text: '/andressacostaaaaaa/'
   },
-  { social: 'telegram', href: 'https://t.me', text: '/andressadacosta' },
+  {
+    social: 'telegram',
+    href: 'https://t.me/andressadacosta',
+    text: '/andressadacosta'
+  },
   {
     social: 'codepen',
     href: 'https://codepen.io/andressadacosta/',
