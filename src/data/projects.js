@@ -94,6 +94,15 @@ const projects = [
   },
   {
     type: 'front',
+    name: ' Alura Store',
+    description: 'Site curso CSS Grid',
+    src: 'alura-store.png',
+    repository: 'https://github.com/AndressaDaCosta/alura-store',
+    site: 'https://andressadacosta.github.io/alura-store/',
+    technologies: ['HTML5', 'CSS3']
+  },
+  {
+    type: 'front',
     name: '📚 Site Alura Cursos',
     description: 'Site curso de Flex-box',
     src: 'alurinha-layout-desktop.png',
