@@ -39,7 +39,7 @@ function Home() {
                 wrapper="h2"
               />
               <a
-                href="https://drive.google.com/file/d/1YOHIyGmzlYjPwPFzbAN-5H7ZwoY44pMp/view?usp=sharing"
+                href="https://drive.google.com/file/d/1yU1RWSXoN7D-S23y3_UQOZlDWYshe8FJ/view?usp=share_link"
                 target="_blank"
                 className="btn-download"
                 rel="noreferrer"
