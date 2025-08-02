@@ -52,6 +52,32 @@
   color: var(--purple-500);
 }
 
+.text-about.list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 4rem;
+}
+
+.text-about.list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.text-about.list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--purple-500);
+}
+
+.icon-inline {
+  display: inline-block;
+  margin: 0 0.3rem;
+  vertical-align: middle;
+  color: var(--purple-500);
+}
+
 @media screen and (max-width: 1090px) {
   .main-wrapper.about {
     flex-direction: column;
