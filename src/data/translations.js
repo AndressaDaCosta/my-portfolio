@@ -56,6 +56,9 @@ export const translations = {
 		contactSubtitle: 'Vamos Conversar 🤙🏻',
 		contactText: 'Entre em contato comigo',
 
+		// Settings page
+		settingsTitle: 'Configurações de Tema',
+
 		// Footer
 		developedWith: 'Desenvolvido com ❤ e Código por Andressa Da Costa',
 		prettier: 'Prettier',
@@ -130,6 +133,9 @@ export const translations = {
 		contactTitle: 'Contact',
 		contactSubtitle: "Let's Talk 🤙🏻",
 		contactText: 'Get in touch with me',
+
+		// Settings page
+		settingsTitle: 'Theme Settings',
 
 		// Footer
 		developedWith: 'Developed with ❤ and Code by Andressa Da Costa',

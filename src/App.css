@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=La+Belle+Aurore&display=swap');
+@import './styles/themes.css';
 
 * {
   padding: 0;

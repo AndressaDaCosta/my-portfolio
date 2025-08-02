@@ -1,0 +1,46 @@
+.main-wrapper.settings {
+	justify-content: flex-start;
+	padding: 2rem;
+}
+
+.settings-container {
+	width: 100%;
+	max-width: 1200px;
+}
+
+.settings-title {
+	color: var(--white-100);
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.themes-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 1.5rem;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.main-wrapper.settings {
+		padding: 1rem;
+	}
+	
+	.settings-title {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	.themes-grid {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.themes-grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+}

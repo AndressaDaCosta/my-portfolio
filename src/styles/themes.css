@@ -1,0 +1,119 @@
+/* VS Code Dark Default Theme */
+:root,
+[data-theme="vscode-dark"] {
+  --bg-primary: #011627;
+  --bg-secondary: #1e2139;
+  --bg-tertiary: #252744;
+  --border-color: #1e2139;
+  --text-primary: #d6deeb;
+  --text-secondary: #607b96;
+  --purple-100: rgba(124, 58, 237, 0.15);
+  --purple-400: #7c3aed;
+  --purple-500: #6d28d9;
+  --purple-600: #5b21b6;
+  --white-100: #ffffff;
+  --gray-100: #607b96;
+  --gray-300: #4c566a;
+}
+
+/* GitHub Dark Theme */
+[data-theme="github-dark"] {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #21262d;
+  --border-color: #30363d;
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --purple-100: rgba(88, 166, 255, 0.1);
+  --purple-400: #79c0ff;
+  --purple-500: #58a6ff;
+  --purple-600: #1f6feb;
+  --white-100: #c9d1d9;
+  --gray-100: #8b949e;
+  --gray-300: #484f58;
+}
+
+/* Dracula Theme */
+[data-theme="dracula"] {
+  --bg-primary: #282a36;
+  --bg-secondary: #44475a;
+  --bg-tertiary: #6272a4;
+  --border-color: #6272a4;
+  --text-primary: #f8f8f2;
+  --text-secondary: #6272a4;
+  --purple-100: rgba(189, 147, 249, 0.1);
+  --purple-400: #bd93f9;
+  --purple-500: #bd93f9;
+  --purple-600: #9580ff;
+  --white-100: #f8f8f2;
+  --gray-100: #6272a4;
+  --gray-300: #6272a4;
+}
+
+/* Ayu Dark Theme */
+[data-theme="ayu-dark"] {
+  --bg-primary: #0a0e14;
+  --bg-secondary: #0d1016;
+  --bg-tertiary: #1c2433;
+  --border-color: #1c2433;
+  --text-primary: #b3b1ad;
+  --text-secondary: #565b66;
+  --purple-100: rgba(255, 180, 84, 0.1);
+  --purple-400: #ffb454;
+  --purple-500: #ff8f40;
+  --purple-600: #f29668;
+  --white-100: #b3b1ad;
+  --gray-100: #565b66;
+  --gray-300: #626a73;
+}
+
+/* Ayu Mirage Theme */
+[data-theme="ayu-mirage"] {
+  --bg-primary: #1f2430;
+  --bg-secondary: #232834;
+  --bg-tertiary: #272d38;
+  --border-color: #323a4c;
+  --text-primary: #cbccc6;
+  --text-secondary: #5c6773;
+  --purple-100: rgba(255, 204, 102, 0.1);
+  --purple-400: #ffcc66;
+  --purple-500: #ffd580;
+  --purple-600: #ffb454;
+  --white-100: #cbccc6;
+  --gray-100: #5c6773;
+  --gray-300: #707a8c;
+}
+
+/* Nord Theme */
+[data-theme="nord"] {
+  --bg-primary: #2e3440;
+  --bg-secondary: #3b4252;
+  --bg-tertiary: #434c5e;
+  --border-color: #4c566a;
+  --text-primary: #eceff4;
+  --text-secondary: #d8dee9;
+  --purple-100: rgba(129, 161, 193, 0.1);
+  --purple-400: #81a1c1;
+  --purple-500: #5e81ac;
+  --purple-600: #4c566a;
+  --white-100: #eceff4;
+  --gray-100: #d8dee9;
+  --gray-300: #4c566a;
+}
+
+/* Night Owl Theme */
+[data-theme="night-owl"] {
+  --bg-primary: #011627;
+  --bg-secondary: #01111d;
+  --bg-tertiary: #0e293f;
+  --border-color: #1d3b53;
+  --text-primary: #d6deeb;
+  --text-secondary: #637777;
+  --purple-100: rgba(199, 146, 234, 0.1);
+  --purple-400: #c792ea;
+  --purple-500: #c792ea;
+  --purple-600: #a665c7;
+  --white-100: #d6deeb;
+  --gray-100: #637777;
+  --gray-300: #5f7e97;
+}
