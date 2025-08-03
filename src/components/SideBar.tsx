@@ -15,7 +15,11 @@ import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 
 const SideBar: React.FC = () => {
-	const { activeSideBar } = useContext(myContext);
+	const context = useContext(myContext);
+	if (!context) {
+		throw new Error('SideBar must be used within an AppProvider');
+	}
+	const { activeSideBar } = context;
 	const { language } = useLanguage();
 	const t = useTranslation(language);
 	const [open, setOpen] = useState(true);

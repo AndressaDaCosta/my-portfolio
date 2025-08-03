@@ -2,7 +2,11 @@ import React, { useContext } from "react";
 import myContext from "../context/AppContext";
 
 const MenuMobile: React.FC = () => {
-  const {activeSideBar, setActiveSideBar} = useContext(myContext)
+  const context = useContext(myContext);
+  if (!context) {
+    throw new Error('MenuMobile must be used within an AppProvider');
+  }
+  const {activeSideBar, setActiveSideBar} = context;
   return ( 
     <button type="button" className="hamburger-menu" onClick={ () => setActiveSideBar(!activeSideBar) }>
       <div className={`line-1 ${activeSideBar && 'active'}`}></div>

@@ -29,7 +29,7 @@
 		]
 	},
 	"engines": {
-		"node": "18.x"
+		"node": "22.x"
 	},
 	"browserslist": {
 		"production": [
@@ -48,6 +48,6 @@
 		"@types/react": "^19.1.9",
 		"@types/react-dom": "^19.1.7",
 		"@types/react-router-dom": "^5.3.3",
-		"typescript": "^5.9.2"
+		"typescript": "^4.9.5"
 	}
 }

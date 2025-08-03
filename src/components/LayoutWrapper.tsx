@@ -6,7 +6,11 @@ interface LayoutWrapperProps {
 }
 
 const LayoutWrapper: React.FC<LayoutWrapperProps> = ({ children }) => {
-	const { activeSideBar, setActiveSideBar } = useContext(myContext);
+	const context = useContext(myContext);
+	if (!context) {
+		throw new Error('LayoutWrapper must be used within an AppProvider');
+	}
+	const { activeSideBar, setActiveSideBar } = context;
 	const containerRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {

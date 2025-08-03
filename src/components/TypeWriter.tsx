@@ -17,8 +17,8 @@ const TypeWriter: React.FC<TypeWriterProps> = ({ steps, loop = 1, wrapper: Wrapp
 
 		const currentStep = steps[currentStepIndex];
 		const isString = typeof currentStep === 'string';
-		const text = isString ? currentStep : steps[currentStepIndex - 1];
-		const delay = isString ? 100 : currentStep;
+		const text = isString ? currentStep : (steps[currentStepIndex - 1] as string);
+		const delay = isString ? 100 : (currentStep as number);
 
 		const timer = setTimeout(
 			() => {

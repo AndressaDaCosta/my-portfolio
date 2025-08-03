@@ -9,7 +9,7 @@ const TitleBar: React.FC = () => {
 	const t = useTranslation(language);
 
 	const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-		setLanguage(e.target.value);
+		setLanguage(e.target.value as 'pt-BR' | 'en');
 	};
 
 	return (

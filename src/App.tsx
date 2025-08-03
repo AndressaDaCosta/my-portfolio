@@ -42,7 +42,6 @@ function App() {
 					<Suspense fallback={<Loading />}>
 						<Routes>
 							<Route
-								exact
 								path="/"
 								element={<Home />}
 							/>
