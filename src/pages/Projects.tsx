@@ -12,7 +12,7 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 
-function Projects() {
+const Projects: React.FC = () => {
 	const { language } = useLanguage();
 	const t = useTranslation(language);
 	const [typeFilter, setTypeFilter] = useState('all');
@@ -141,6 +141,6 @@ function Projects() {
 			</div>
 		</LayoutWrapper>
 	);
-}
+};
 
 export default Projects;

@@ -2,7 +2,13 @@ import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 
-const ImageWithLoading = ({ src, alt, className }) => {
+interface ImageWithLoadingProps {
+	src: string;
+	alt: string;
+	className?: string;
+}
+
+const ImageWithLoading: React.FC<ImageWithLoadingProps> = ({ src, alt, className }) => {
 	const { language } = useLanguage();
 	const t = useTranslation(language);
 	const [isLoading, setIsLoading] = useState(true);

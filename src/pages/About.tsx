@@ -13,7 +13,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 import { VscRocket } from 'react-icons/vsc';
 
-function About() {
+const About: React.FC = () => {
 	const { language } = useLanguage();
 	const t = useTranslation(language);
 	return (
@@ -201,6 +201,6 @@ function About() {
 			</body>
 		</LayoutWrapper>
 	);
-}
+};
 
 export default About;

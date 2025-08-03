@@ -11,7 +11,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 import '../styles/Settings.css';
 
-function Settings() {
+const Settings: React.FC = () => {
 	const { themes } = useTheme();
 	const { language } = useLanguage();
 	const t = useTranslation(language);
@@ -49,6 +49,6 @@ function Settings() {
 			</body>
 		</LayoutWrapper>
 	);
-}
+};
 
 export default Settings;

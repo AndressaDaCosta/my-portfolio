@@ -157,8 +157,8 @@ export const translations = {
 	}
 };
 
-export const useTranslation = (language) => {
-	return (key) => {
+export const useTranslation = (language: 'pt-BR' | 'en') => {
+	return (key: keyof typeof translations['pt-BR']): string => {
 		return (
 			translations[language]?.[key] || translations['pt-BR'][key] || key
 		);

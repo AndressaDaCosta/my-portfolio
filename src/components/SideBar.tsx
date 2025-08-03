@@ -14,7 +14,7 @@ import myContext from '../context/AppContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 
-function SideBar() {
+const SideBar: React.FC = () => {
 	const { activeSideBar } = useContext(myContext);
 	const { language } = useLanguage();
 	const t = useTranslation(language);
@@ -125,6 +125,6 @@ function SideBar() {
 			</section>
 		</aside>
 	);
-}
+};
 
 export default SideBar;

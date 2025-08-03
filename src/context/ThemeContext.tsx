@@ -1,8 +1,9 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { ThemeContextType, Theme } from '../types';
 
-const ThemeContext = createContext();
+const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export const useTheme = () => {
+export const useTheme = (): ThemeContextType => {
 	const context = useContext(ThemeContext);
 	if (!context) {
 		throw new Error('useTheme must be used within a ThemeProvider');
@@ -10,7 +11,7 @@ export const useTheme = () => {
 	return context;
 };
 
-const themes = {
+const themes: Record<string, Theme> = {
 	'vscode-dark': {
 		name: 'VS Code Dark',
 		icon: '/themes/vs-code.webp',
@@ -48,8 +49,12 @@ const themes = {
 	}
 };
 
-export const ThemeProvider = ({ children }) => {
-	const [currentTheme, setCurrentTheme] = useState(() => {
+interface ThemeProviderProps {
+	children: ReactNode;
+}
+
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
+	const [currentTheme, setCurrentTheme] = useState<string>(() => {
 		return localStorage.getItem('portfolio-theme') || 'vscode-dark';
 	});
 
@@ -58,11 +63,11 @@ export const ThemeProvider = ({ children }) => {
 		document.documentElement.setAttribute('data-theme', currentTheme);
 	}, [currentTheme]);
 
-	const setTheme = (theme) => {
+	const setTheme = (theme: string) => {
 		setCurrentTheme(theme);
 	};
 
-	const value = {
+	const value: ThemeContextType = {
 		currentTheme,
 		setTheme,
 		themes,

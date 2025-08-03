@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-const TypeWriter = ({ steps, loop = 1, wrapper: Wrapper = 'span' }) => {
+interface TypeWriterProps {
+	steps: (string | number)[];
+	loop?: number;
+	wrapper?: React.ElementType;
+}
+
+const TypeWriter: React.FC<TypeWriterProps> = ({ steps, loop = 1, wrapper: Wrapper = 'span' }) => {
 	const [displayText, setDisplayText] = useState('');
 	const [currentStepIndex, setCurrentStepIndex] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);

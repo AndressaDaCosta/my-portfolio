@@ -7,7 +7,7 @@ import '../styles/Footer.css';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 
-function Footer() {
+const Footer: React.FC = () => {
 	const { language } = useLanguage();
 	const t = useTranslation(language);
 	let iconReactStyles = { color: 'aqua', fontSize: '1.5em' };
@@ -55,6 +55,6 @@ function Footer() {
 			</div>
 		</footer>
 	);
-}
+};
 
 export default memo(Footer);

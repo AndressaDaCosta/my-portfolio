@@ -10,7 +10,7 @@ import contacts from '../data/contacts';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 
-function Contact() {
+const Contact: React.FC = () => {
 	const { language } = useLanguage();
 	const t = useTranslation(language);
 	return (
@@ -61,6 +61,6 @@ function Contact() {
 			</body>
 		</LayoutWrapper>
 	);
-}
+};
 
 export default Contact;

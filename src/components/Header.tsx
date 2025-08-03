@@ -7,8 +7,7 @@ import html_icon from '../images/html_icon.svg'
 import css_icon from '../images/css_icon.svg'
 import json_icon from '../images/json_icon.svg'
 
-
-function Header() {
+const Header: React.FC = () => {
   return ( 
     <header className="header-container">
       <nav className="nav-container">
@@ -41,6 +40,6 @@ function Header() {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

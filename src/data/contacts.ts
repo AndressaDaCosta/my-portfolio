@@ -1,4 +1,6 @@
-const contacts = [
+import { Contact } from '../types';
+
+const contacts: Contact[] = [
   {
     social: 'email',
     href: 'mailto:andressadacostan@gmail.com',
@@ -16,19 +18,9 @@ const contacts = [
   },
   {
     social: 'instagram',
-    href: 'https://www.instagram.com/andressacostaaaaaa/',
-    text: '/andressacostaaaaaa/'
-  },
-  {
-    social: 'telegram',
-    href: 'https://t.me/andressadacosta',
-    text: '/andressadacosta'
-  },
-  {
-    social: 'codepen',
-    href: 'https://codepen.io/andressadacosta/',
-    text: '/andressadacosta'
+    href: 'https://www.instagram.com/andressadacostadev/',
+    text: '/andressadacostadev'
   }
-]
+];
 
-export default contacts
+export default contacts;

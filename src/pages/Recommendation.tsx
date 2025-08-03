@@ -10,7 +10,7 @@ import '../styles/Recommendation.css';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 
-function Projects() {
+const Recommendation: React.FC = () => {
 	const { language } = useLanguage();
 	const t = useTranslation(language);
 	return (
@@ -53,6 +53,6 @@ function Projects() {
 			</body>
 		</LayoutWrapper>
 	);
-}
+};
 
-export default Projects;
+export default Recommendation;

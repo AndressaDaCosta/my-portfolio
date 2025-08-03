@@ -1,7 +1,14 @@
 import { useTheme } from '../context/ThemeContext';
 import '../styles/ThemeCard.css';
 
-const ThemeCard = ({ theme, icon, name, publisher }) => {
+interface ThemeCardProps {
+	theme: string;
+	icon: string;
+	name: string;
+	publisher: string;
+}
+
+const ThemeCard = ({ theme, icon, name, publisher }: ThemeCardProps) => {
 	const { currentTheme, setTheme } = useTheme();
 	const isActive = currentTheme === theme;
 

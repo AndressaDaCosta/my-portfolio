@@ -1,4 +1,6 @@
-const recommendation = [
+import { Recommendation } from '../types';
+
+const recommendation: Recommendation[] = [
 	{
 		name: 'Juliana Gagliano',
 		message:
@@ -11,7 +13,6 @@ const recommendation = [
 			'"Frontend | Backend Andressa é de longe a melhor desenvolvedora auto didata que eu conheço, criativa, inovadora e perfeccionista.."',
 		social: 'https://www.linkedin.com/in/felipemarzochi/'
 	}
-	//
 ];
 
 export default recommendation;

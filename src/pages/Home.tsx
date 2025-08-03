@@ -12,7 +12,7 @@ import TypeWriter from '../components/TypeWriter';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 
-function Home() {
+const Home: React.FC = () => {
 	const { language } = useLanguage();
 	const t = useTranslation(language);
 
@@ -70,6 +70,6 @@ function Home() {
 			</div>
 		</LayoutWrapper>
 	);
-}
+};
 
 export default Home;

@@ -4,11 +4,11 @@ import { BsCodeSlash } from 'react-icons/bs';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../data/translations';
 
-function TitleBar() {
+const TitleBar: React.FC = () => {
 	const { language, setLanguage } = useLanguage();
 	const t = useTranslation(language);
 
-	const handleLanguageChange = (e) => {
+	const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		setLanguage(e.target.value);
 	};
 
@@ -46,6 +46,6 @@ function TitleBar() {
 			</select>
 		</section>
 	);
-}
+};
 
 export default TitleBar;

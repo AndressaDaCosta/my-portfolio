@@ -1,8 +1,9 @@
+import React from 'react';
 import allIcons from 'simple-icons';
 import { v4 } from 'uuid';
 import { IconCloud } from 'react-icon-cloud';
 
-const Componente = () => {
+const Componente: React.FC = () => {
 	const tagCanvasOptions = {
 		clickToFront: 500,
 		depth: 1,

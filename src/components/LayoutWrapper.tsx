@@ -1,12 +1,16 @@
-import React, { useRef, useEffect, useContext } from 'react';
+import React, { useRef, useEffect, useContext, ReactNode } from 'react';
 import myContext from '../context/AppContext';
 
-function LayoutWrapper({ children }) {
+interface LayoutWrapperProps {
+	children: ReactNode;
+}
+
+const LayoutWrapper: React.FC<LayoutWrapperProps> = ({ children }) => {
 	const { activeSideBar, setActiveSideBar } = useContext(myContext);
-	const containerRef = useRef(null);
+	const containerRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		function handleClickOutside(event) {
+		function handleClickOutside(event: MouseEvent) {
 			// Verifica se a sidebar está ativa
 			if (!activeSideBar) return;
 
@@ -17,8 +21,8 @@ function LayoutWrapper({ children }) {
 			if (
 				sidebar &&
 				hamburgerMenu &&
-				!sidebar.contains(event.target) &&
-				!hamburgerMenu.contains(event.target)
+				!sidebar.contains(event.target as Node) &&
+				!hamburgerMenu.contains(event.target as Node)
 			) {
 				setActiveSideBar(false);
 			}
@@ -40,6 +44,6 @@ function LayoutWrapper({ children }) {
 			{children}
 		</div>
 	);
-}
+};
 
 export default LayoutWrapper;

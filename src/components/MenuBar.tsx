@@ -1,7 +1,13 @@
 import React, { memo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-function MenuBar({ name, icon, path }) {
+interface MenuBarProps {
+	name: string;
+	icon: string;
+	path: string;
+}
+
+const MenuBar: React.FC<MenuBarProps> = ({ name, icon, path }) => {
 	const { pathname } = useLocation();
 	return (
 		<Link
@@ -16,6 +22,6 @@ function MenuBar({ name, icon, path }) {
 			<p>{name}</p>
 		</Link>
 	);
-}
+};
 
 export default memo(MenuBar);

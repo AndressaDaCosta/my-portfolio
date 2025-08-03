@@ -1,4 +1,6 @@
-const projects = [
+import { Project } from '../types';
+
+const projects: Project[] = [
 	{
 		type: 'mobile',
 		name: '💳 App Bancário Whitelabel Real',
