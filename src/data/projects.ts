@@ -3,6 +3,23 @@ import { Project } from '../types';
 const projects: Project[] = [
 	{
 		type: 'mobile',
+		featured: true,
+		name: '💳 BTG Pay · Aplicação POS EMV e SDK de pagamentos',
+		description:
+			'Desenvolvimento da aplicação de pagamento whitelabel e do SDK de pagamentos para maquininha POS de duas telas. O primeiro cliente em produção é o BTG Pactual, com a nova maquininha BTG Pay.',
+		context: 'Junto à Tupi Fintech e à Positivo Tecnologia · cliente BTG Pactual',
+		src: 'btg-pay.webp',
+		highlights: [
+			'Aplicação POS whitelabel: a mesma base atende diferentes marcas e clientes',
+			'Fluxo de pagamento com cartão no padrão EMV (aproximação, chip e tarja)',
+			'SDK de pagamentos para integração de outros apps com a maquininha',
+			'Experiência pensada para duas telas: operador e cliente',
+			'Primeiro cliente real em produção: BTG Pactual (BTG Pay)'
+		],
+		technologies: ['POS', 'EMV', 'SDK', 'Pagamentos', 'Whitelabel']
+	},
+	{
+		type: 'mobile',
 		name: '💳 App Bancário Whitelabel Real',
 		description:
 			'Aplicativo bancário whitelabel desenvolvido com React Native e AWS Lambdas - iOS/Android',

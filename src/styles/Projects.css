@@ -128,3 +128,45 @@
     padding-top: 100px;
   }
 }
+/* Projeto em destaque */
+.card-project.card-featured {
+  width: 100%;
+  max-width: calc(350px * 3 + 2rem);
+  box-sizing: border-box;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 0.8rem;
+  align-items: start;
+  padding: 1.25rem;
+  border-color: var(--purple-500);
+}
+.card-featured .img-container {
+  grid-row: 1 / span 6;
+  height: auto;
+  aspect-ratio: 1200 / 610;
+}
+.context-project {
+  font-size: 0.85rem;
+  color: var(--purple-500);
+  font-weight: 600;
+}
+.highlights-project {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+}
+@media (max-width: 860px) {
+  .card-project.card-featured {
+    display: flex;
+    flex-direction: column;
+    width: min(350px, 90vw);
+  }
+  .card-featured .img-container {
+    width: 100%;
+  }
+}

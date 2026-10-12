@@ -84,13 +84,18 @@ const Projects: React.FC = () => {
 											repository,
 											description,
 											site,
-											technologies
+											technologies,
+											featured,
+											context,
+											highlights
 										},
 										index
 									) => (
 										<div
 											key={`${type}-${name}-${index}`}
-											className="card-project">
+											className={`card-project${
+												featured ? ' card-featured' : ''
+											}`}>
 											<ImageWithLoading
 												src={src}
 												alt={`${t(
@@ -101,7 +106,19 @@ const Projects: React.FC = () => {
 											<h2 className="title-project">
 												{name}
 											</h2>
+											{context && (
+												<p className="context-project">
+													{context}
+												</p>
+											)}
 											<p>{description}</p>
+											{highlights && (
+												<ul className="highlights-project">
+													{highlights.map((h) => (
+														<li key={h}>{h}</li>
+													))}
+												</ul>
+											)}
 											<div className="technologies-container">
 												{technologies.map(
 													(tech, techIndex) => (
@@ -113,7 +130,9 @@ const Projects: React.FC = () => {
 													)
 												)}
 											</div>
+											{(repository || site) && (
 											<div className="links-container">
+												{repository && (
 												<a
 													href={repository}
 													title={t('github')}
@@ -121,6 +140,8 @@ const Projects: React.FC = () => {
 													rel="noreferrer">
 													<FiGithub />
 												</a>
+												)}
+												{site && (
 												<a
 													href={site}
 													title={t('viewApp')}
@@ -128,7 +149,9 @@ const Projects: React.FC = () => {
 													rel="noreferrer">
 													<FiExternalLink />
 												</a>
+												)}
 											</div>
+											)}
 										</div>
 									)
 								)}

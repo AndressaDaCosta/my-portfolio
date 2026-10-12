@@ -7,6 +7,12 @@ export interface Project {
   repository?: string;
   site?: string;
   technologies: string[];
+  /** Projeto em destaque: card largo, com detalhes. */
+  featured?: boolean;
+  /** Parceiros e cliente do projeto. */
+  context?: string;
+  /** Pontos do trabalho, mostrados em lista no card em destaque. */
+  highlights?: string[];
 }
 
 // Contact types
