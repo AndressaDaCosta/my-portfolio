@@ -19,6 +19,35 @@ const projects: Project[] = [
 		technologies: ['POS', 'EMV', 'SDK', 'Pagamentos', 'Whitelabel']
 	},
 	{
+		type: 'front',
+		name: '🧁 DaMi Afeto & Sabor',
+		description:
+			'Site sob medida para confeitaria artesanal em Joinville, com cardápio e encomenda pelo WhatsApp.',
+		context: 'DeStack_ Studio · cliente real',
+		src: 'dami-afeto-e-sabor.webp',
+		site: 'https://damiafetoesabor.com.br',
+		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'SEO local']
+	},
+	{
+		type: 'front',
+		name: '🖤 Felipe Moreira',
+		description:
+			'Site em preto e branco para estúdio de tatuagem, com galeria e orçamento pelo WhatsApp.',
+		context: 'DeStack_ Studio · cliente real',
+		src: 'felipe-moreira-tatuador.webp',
+		site: 'https://felipemoreiratatuador.com.br',
+		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'SEO local']
+	},
+	{
+		type: 'front',
+		name: '⚖️ Feltrin & Pscheidt',
+		description:
+			'Site institucional para escritório de advocacia em Joinville, dentro das regras da OAB.',
+		context: 'DeStack_ Studio · em breve no ar',
+		src: 'feltrin-pscheidt-advocacia.webp',
+		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'SEO local']
+	},
+	{
 		type: 'mobile',
 		name: '💳 App Bancário Whitelabel Real',
 		description:
