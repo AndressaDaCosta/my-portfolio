@@ -43,8 +43,9 @@ const projects: Project[] = [
 		name: '⚖️ Feltrin & Pscheidt',
 		description:
 			'Site institucional para escritório de advocacia em Joinville, dentro das regras da OAB.',
-		context: 'DeStack_ Studio · em breve no ar',
+		context: 'DeStack_ Studio · cliente real',
 		src: 'feltrin-pscheidt-advocacia.webp',
+		site: 'https://fpadvocacia.com.br',
 		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'SEO local']
 	},
 	{
