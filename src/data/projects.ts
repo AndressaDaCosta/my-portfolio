@@ -49,6 +49,16 @@ const projects: Project[] = [
 		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'SEO local']
 	},
 	{
+		type: 'front',
+		name: '⚖️ Schettert & Lopes',
+		description:
+			'Site institucional para escritório de advocacia em Joinville desde 1986, com agendamento pelo WhatsApp e dentro das regras da OAB.',
+		context: 'DeStack_ Studio · cliente real',
+		src: 'schettert-lopes-advocacia.webp',
+		site: 'https://schettertelopesadv.com.br',
+		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'SEO local']
+	},
+	{
 		type: 'mobile',
 		name: '💳 App Bancário Whitelabel Real',
 		description:
